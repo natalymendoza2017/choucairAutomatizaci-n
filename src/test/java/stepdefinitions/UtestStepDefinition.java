@@ -27,8 +27,31 @@ class UtestStepDefinitions {
 
     @Then("^redirects to log view$")
     public void redirectsToLogView() {
-        OnStage.theActorCalled( "Nataly").wasAbleTo(Step1.OnThePage());
+
     }
 
+    @Given("^given that the user completes the personal data form$")
+    public void givenThatTheUserCompletesThePersonalDataForm() {
+    }
 
+    @When("^the user writes in the field first name \"([^\"]*)\" last name \"([^\"]*)\" email address \"([^\"]*)\" month \"([^\"]*)\" day \"([^\"]*)\" year \"([^\"]*)\" language \"([^\"]*)\" and clicks on the next button$")
+    public void theUserWritesInTheFieldFirstNameLastNameAddressMonthDayYearLanguageAndClicksOnTheNextButton
+            (String firstName, String lastName, String email, String month, String day, String year, String language) {
+
+        final Step1 step1 = new Step1(
+                firstName,
+                lastName,
+                email,
+                month,
+                day,
+                year,
+                language
+        );
+
+        OnStage.theActorCalled( "Nataly").wasAbleTo(step1.OnThePage());
+    }
+
+    @Then("^continue to stepTwo$")
+    public void continueToStepTwo() {
+    }
 }

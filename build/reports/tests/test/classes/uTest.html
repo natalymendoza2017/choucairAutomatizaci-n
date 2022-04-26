@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">1</div>
+<div class="counter">2</div>
 <p>tests</p>
 </div>
 </td>
@@ -35,13 +35,13 @@
 </td>
 <td>
 <div class="infoBox" id="ignored">
-<div class="counter">1</div>
+<div class="counter">2</div>
 <p>ignored</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.072s</div>
+<div class="counter">0.179s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,6 +78,11 @@
 </tr>
 </thead>
 <tr>
+<td class="skipped">Step1</td>
+<td class="skipped">-</td>
+<td class="skipped">ignored</td>
+</tr>
+<tr>
 <td class="skipped">start registration</td>
 <td class="skipped">-</td>
 <td class="skipped">ignored</td>
@@ -87,10 +92,10 @@
 <div id="tab1" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@82e2928
+<pre>[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6118412a
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - TEST PENDING
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2c96d282
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@67d3cdb
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5ac66b73
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@dd38a72
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: start registration:Given a user who wants to register, When click the join today button, Then redirects to log view
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [start registration:Given a user who wants to register, When click the join today button, Then redirects to log view]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [start registration:Given a user who wants to register, When click the join today button, Then redirects to log view]
@@ -104,6 +109,23 @@
 
 TEST PENDING: start registration
 ---------------------------------------------------------------------------------
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5538c6b1
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - TEST PENDING
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@40bb47d1
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@e11e5e2
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: Step1:Given given that the user completes the personal data form, When the user writes in the field first name &quot;nataly&quot; last name &quot;Mendoza&quot; email address &quot;mail@gmail.com&quot; month &quot;April&quot; day &quot;04&quot; year &quot;1995&quot; language &quot;English&quot; and clicks on the next button, Then continue to stepTwo
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [start registration:Given a user who wants to register, When click the join today button, Then redirects to log view, Step1:Given given that the user completes the personal data form, When the user writes in the field first name &quot;nataly&quot; last name &quot;Mendoza&quot; email address &quot;mail@gmail.com&quot; month &quot;April&quot; day &quot;04&quot; year &quot;1995&quot; language &quot;English&quot; and clicks on the next button, Then continue to stepTwo]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [start registration:Given a user who wants to register, When click the join today button, Then redirects to log view, Step1:Given given that the user completes the personal data form, When the user writes in the field first name &quot;nataly&quot; last name &quot;Mendoza&quot; email address &quot;mail@gmail.com&quot; month &quot;April&quot; day &quot;04&quot; year &quot;1995&quot; language &quot;English&quot; and clicks on the next button, Then continue to stepTwo]
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+          __  _____ _____ ____ _____   ____  _____ _   _ ____ ___ _   _  ____ 
+ _       / / |_   _| ____/ ___|_   _| |  _ \| ____| \ | |  _ \_ _| \ | |/ ___|
+(_)____ / /    | | |  _| \___ \ | |   | |_) |  _| |  \| | | | | ||  \| | |  _ 
+ |_____/ /     | | | |___ ___) || |   |  __/| |___| |\  | |_| | || |\  | |_| |
+(_)   /_/      |_| |_____|____/ |_|   |_|   |_____|_| \_|____/___|_| \_|\____|
+                                                                                
+
+TEST PENDING: Step1
+---------------------------------------------------------------------------------
 </pre>
 </span>
 </div>
@@ -115,7 +137,7 @@ TEST PENDING: start registration
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.2.1</a> at 23/04/2022, 11:22:22 p. m.</p>
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at 25/04/2022, 9:45:55 p. m.</p>
 </div>
 </div>
 </body>
